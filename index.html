@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
     <title>Document</title>
@@ -509,43 +508,6 @@
 
 
 
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoibG9zdHZheW5lIiwiYSI6ImNrcmVvcGszcDE2a2kzMHBlc21xanU1NzMifQ.MvDjk7YHSzNCLolFO12NKw';
-    /* Map: This represents the map on the page. */
-    var map = new mapboxgl.Map({
-        container: "map",
-        style: 'mapbox://styles/lostvayne/ckreotvv00iz318o23zi3wykq', // style URL
-        zoom: 16.51,
-        center: [83.7742,53.3409],
-    });
-    map.on("load", function () {
-        /* Image: An image is loaded and added to the map. */
-        map.loadImage("img/point.png", function(error, image) {
-            if (error) throw error;
-            map.addImage("custom-marker", image);
-            /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
-            map.addLayer({
-                id: "markers",
-                type: "symbol",
-                /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
-                source: {
-                    type: "geojson",
-                    data: {
-                        type: "FeatureCollection",
-                        features:[
-
-                            {"type":"Feature","geometry":{"type":"Point","coordinates":["83.7742","53.3409"]}}
-                        ]
-                    }
-                },
-                layout: {
-                    "icon-image": "custom-marker",
-                }
-
-            });
-        });
-    });
-</script>
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
@@ -718,7 +680,44 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/swiper-link.min.js"></script>
 <script src="js/modal.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibG9zdHZheW5lIiwiYSI6ImNrcmVvcGszcDE2a2kzMHBlc21xanU1NzMifQ.MvDjk7YHSzNCLolFO12NKw';
+    /* Map: This represents the map on the page. */
+    var map = new mapboxgl.Map({
+        container: "map",
+        style: 'mapbox://styles/lostvayne/ckreotvv00iz318o23zi3wykq', // style URL
+        zoom: 16.51,
+        center: [83.7742,53.3409],
+    });
+    map.on("load", function () {
+        /* Image: An image is loaded and added to the map. */
+        map.loadImage("img/point.png", function(error, image) {
+            if (error) throw error;
+            map.addImage("custom-marker", image);
+            /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+            map.addLayer({
+                id: "markers",
+                type: "symbol",
+                /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+                source: {
+                    type: "geojson",
+                    data: {
+                        type: "FeatureCollection",
+                        features:[
 
+                            {"type":"Feature","geometry":{"type":"Point","coordinates":["83.7742","53.3409"]}}
+                        ]
+                    }
+                },
+                layout: {
+                    "icon-image": "custom-marker",
+                }
+
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
