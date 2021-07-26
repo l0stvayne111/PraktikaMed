@@ -523,6 +523,30 @@
       font-size: 10px;
     }
   }
+  .services-section{
+    &__item{
+      &-inner{
+        min-height: 10rem;
+      }
+      &-content{
+        &__text{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .form-map-section{
+    &__form{
+      &__title{
+        h2{
+          font-size: 1.8rem;
+          span{
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
   .contacts{
     span{
       display: none;
