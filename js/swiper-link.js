@@ -51,6 +51,7 @@ var swiper = new Swiper(".slider-min", {
     watchSlidesProgress: true,
     pagination: {
         el: ".slider-min-pagination",
+        clickable: true,
     },
     navigation: {
         nextEl: ".slider-min-arrow-next",
