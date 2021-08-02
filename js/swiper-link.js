@@ -2,6 +2,7 @@ var swiper = new Swiper(".main-slider", {
     autoplay: {
         delay: 3000,
     },
+    watchOverflow: true,
     speed: 1000,
     loop: true,
 });
@@ -9,6 +10,7 @@ var swiper = new Swiper(".doctors-slider", {
     autoplay: {
         delay: 3000,
     },
+    watchOverflow: true,
     speed: 1000,
     slidesPerView: 2,
     spaceBetween: 30,
@@ -44,6 +46,7 @@ var swiper = new Swiper(".slider-min", {
     autoplay: {
         delay: 3000,
     },
+    watchOverflow: true,
     speed: 1000,
     slidesPerView: 4,
     freeMode: true,
@@ -92,6 +95,7 @@ var swiper = new Swiper(".slider-min", {
 
 });
 var swiper2 = new Swiper(".mySwiper2", {
+    watchOverflow: true,
     spaceBetween: 0,
     autoplay: {
         delay: 3000,
