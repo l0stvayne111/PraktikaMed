@@ -1302,6 +1302,26 @@ button {
   visibility: hidden;
   display: flex;
 
+  &.modal-contact{
+    .modal__body{
+      width: 1218px;
+      padding: 0;
+    }
+    .form-map-section__form{
+      position: relative;
+      transform: translateY(0);
+    }
+    .modal__close{
+      top: 15px;
+      right: 15px;
+      svg{
+        path{
+          stroke: var(--white);
+        }
+      }
+    }
+  }
+
   &__body {
     width: 850px;
     max-width: calc(100% - 0.01px) !important;
@@ -1323,6 +1343,7 @@ button {
     border: 0;
     background: transparent;
     outline: 0;
+    z-index: 999;
   }
 
   &__text {
@@ -1332,6 +1353,8 @@ button {
     text-align: justify;
   }
 }
+
+
 
 
 .image {

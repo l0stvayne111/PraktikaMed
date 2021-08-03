@@ -272,7 +272,7 @@
                     консультации в клинике «ПрактикМед» вам предложат все возможные альтернативы — от премиум-класса до
                     бюджетных конструкций, а наши специалисты помогут подобрать оптимальный вариант.
                 </div>
-                <a href="" class="btn">Получить консультацию</a>
+                <button class="btn open-modal-js" data-modal="#modal-contact">Получить консультацию</button>
             </div>
         </div>
     </div>
@@ -711,6 +711,53 @@
             deserunt doloremque eligendi enim est et illum ipsa itaque iusto laborum magnam maxime neque omnis possimus
             praesentium quas quibusdam quisquam repellendus rerum, ullam.
         </p>
+
+    </div>
+</div>
+
+<div id="modal-contact" class="modal-js modal modal-contact">
+    <div class="modal__body">
+        <button type="button" class="modal__close close-modal">
+            <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.8182 1.93934L1.93957 19.818M19.8182 19.818L1.93957 1.93934" stroke="#535c69"
+                      stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <div class="form-map-section__form">
+            <div class="form-map-section__form__banner">
+                <img src="img/form-bg-3.png" alt="">
+            </div>
+            <div class="form-map-section__form__inner">
+                <div class="form-map-section__form__title">
+                    <h2>Запишитесь на консультацию
+                        <br>
+                        <span>со стоматологом</span>
+                    </h2>
+                </div>
+                <form class="form-map-section__form__form">
+                    <div class="form-map-section__form__row">
+                        <div class="form-map-section__form__input">
+                            <input type="text" placeholder="Имя" required>
+                        </div>
+                        <div class="form-map-section__form__input">
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-map-section__form__input">
+                            <button type="submit">записаться</button>
+                        </div>
+                        <div class="form-map-section__form__input">
+                            <div class="checkbox">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" required="">
+                                    <span><span>Я согласен на обработку персональных данных</span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
 
     </div>
 </div>
