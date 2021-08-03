@@ -206,7 +206,7 @@
             </div>
             <div class="services-section__items">
                 <div class="services-section__item">
-                    <div class="services-section__item-inner">
+                    <div class="services-section__item-inner open-modal-js" data-modal="#modal-services">
                         <div class="services-section__item-inner__img-box">
                             <img src="img/services-1.jpg" alt="">
                         </div>
@@ -215,13 +215,13 @@
                                 <img src="img/icons/anesthesia.svg" alt="">
                             </div>
                             <div class="services-section__item-content__text">
-                                <a href="#modal-services" class="open-modal-js">Хирургия</a>
+                                <span>Хирургия</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="services-section__item">
-                    <div class="services-section__item-inner">
+                    <div class="services-section__item-inner open-modal-js" data-modal="#modal-services">
                         <div class="services-section__item-inner__img-box">
                             <img src="img/services-2.jpg" alt="">
                         </div>
@@ -230,13 +230,13 @@
                                 <img src="img/icons/tooth.svg" alt="">
                             </div>
                             <div class="services-section__item-content__text">
-                                <a href="#modal-services" class="open-modal-js">Лечение</a>
+                                <span>Лечение</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="services-section__item">
-                    <div class="services-section__item-inner">
+                    <div class="services-section__item-inner open-modal-js" data-modal="#modal-services">
                         <div class="services-section__item-inner__img-box">
                             <img src="img/services-3.jpg" alt="">
                         </div>
@@ -245,7 +245,7 @@
                                 <img src="img/icons/implants.svg" alt="">
                             </div>
                             <div class="services-section__item-content__text">
-                                <a href="#modal-services" class="open-modal-js">Протезирование</a>
+                                <span>Протезирование</span>
                             </div>
                         </div>
                     </div>
@@ -319,7 +319,7 @@
                         безболезненной. Эстетика, безупречность и надежность — наша идеология. А результат нашей работы
                         — ваши совершенные улыбки.
                     </p>
-                    <a href="" class="btn">Подробнее о клинике</a>
+                    <button class="btn open-modal-js" data-modal="#modal-aboutUs">Подробнее о клинике</button>
                 </div>
                 <div class="aboutUs-section__slider-min">
                     <div class="swiper-container slider-min">
@@ -675,6 +675,46 @@
 
     </div>
 </div>
+<div id="modal-aboutUs" class="modal-js modal">
+    <div class="modal__body">
+        <button type="button" class="modal__close close-modal">
+            <svg width="12" height="12" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.8182 1.93934L1.93957 19.818M19.8182 19.818L1.93957 1.93934" stroke="#535c69"
+                      stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <div class="title">Title Text</div>
+
+        <div class="image image--align-center image--align-left@m">
+            <img src="img/banner-info.jpg" alt="">
+        </div>
+
+        <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate, rerum! Cumque
+            debitis distinctio
+            eligendi, enim harum illo natus repudiandae sapiente soluta voluptatem. Ab ad aperiam architecto aut
+            consequatur consequuntur, dicta ea exercitationem expedita illo ipsa, ipsam laudantium molestiae
+            necessitatibus odio pariatur quasi voluptate. Dolore ex maiores, nesciunt quidem unde velit vero.
+            Accusantium aliquid animi aut blanditiis culpa debitis deleniti dicta dolore ducimus ea eveniet
+            exercitationem expedita facilis incidunt, magni minus molestias officia officiis perspiciatis quidem quis
+            ratione repudiandae sed soluta sunt tempora veritatis vitae voluptas voluptatibus voluptatum! A aliquam
+            dolore nulla repudiandae voluptatum? Ab accusantium assumenda atque, consequuntur corporis culpa cumque
+            dignissimos eius fuga iusto magni modi perferendis provident quas qui sed tempore temporibus velit! Cum
+            dolores enim hic illo incidunt ipsum iusto molestiae mollitia nam natus nemo nisi, veritatis voluptatem. A
+            ad cum cumque doloremque ea eligendi, excepturi illum maxime minus mollitia natus nobis quaerat quia? Aut
+            consequuntur distinctio eligendi enim ex facilis illum impedit ipsam iure iusto, libero maiores minima
+            nesciunt, nihil optio pariatur perferendis porro possimus praesentium quo quos reprehenderit sit, soluta
+            suscipit temporibus. Beatae esse itaque, molestias natus odio odit provident quaerat. A, eaque est facere
+            in, maiores, maxime nemo nostrum quas suscipit unde voluptatibus!</p>
+        <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi at culpa dolorum,
+            enim eum, incidunt laboriosam nam nemo nesciunt nobis, numquam sint temporibus veritatis vitae. Accusantium,
+            deserunt doloremque eligendi enim est et illum ipsa itaque iusto laborum magnam maxime neque omnis possimus
+            praesentium quas quibusdam quisquam repellendus rerum, ullam.
+        </p>
+
+    </div>
+</div>
+
 <script src="js/index.min.js"></script>
 <script src="js/fancybox.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
